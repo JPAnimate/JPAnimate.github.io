@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --primary-color:#3ed3c4;
+    --light-color:#3cffe5;
+    --dark-color: #111;
+    --light-logo: background-image: url('logohover.png');
+
+}
+head {
+    font-family: ''
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background: #e6fffc;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+image {
+    max-width: 100%;
+}
+/* Navbar */
+.navbar {
+    background: var(--primary-color);
+    padding: 20px;
+    line-height: 50px;
+    border: solid 5px rgba(47, 77, 91, 0.519);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar .main-menu ul {
+display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.1s;
+    
+}
+
+.navbar ul li a:hover {
+    color: var(--light-color);
+}
+
+.navbar ul li a i {
+    margin-right: 0px;
+
+}
+.navbar ul li: last-child a {
+    margin-left: 10px;  
+}
+
+/* Logo */
+
+.image-hover {
+    width: 126x; /* Specify the width */
+    height: 35px; /* Specify the height */
+    background-image: url('images/logo.png'); /* Initial background image */
+    background-size: cover; /* Cover the entire area of the element */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.image-hover:hover {
+    background-image: url('images/logohover.png'); /* Change on hover */
+}
+
+
+
+/* Hero */
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    background: url('../images/WebsiteCorner.gif') no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 550px
+    
+}
+
+.hero .hero-content {
+    width: 70%;
+}
+
+.hero .hero-text {
+    width: 70% ;
+    margin-bottom: 20px;
+}
+
+/* Video */
+.video {
+    padding: 10px 0 40px;
+   
+}
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.video-preview {
+    margin-bottom: 20px;
+
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding:13px 20px;
+    background: var(--primary-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding:13px 20px;
+    background: var(--primary-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    color: #fff
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn-dark {
+    display: inline-block;
+    padding:13px 20px;
+    background: var(--dark-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    color: #fff
+}
+.btn-dark:hover {
+    opacity: 0.8;
+}
+.btn-block {
+    display: block;
+    padding:13px 20px;
+    background: var(--dark-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    color: #fff
+}
+.btn-block:hover {
+    opacity: 0.8;
+}
+
+/* Text Classes */
+
+.text-xxl {
+font-size: 3rem;
+line-height: 1.2;
+font-weight: 600;
+margin: 40px 0 20px;
+}
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+    
+.text-lg {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        font-weight: normal;
+        margin: 30px 0 20px;
+}
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*Text Color*/
+
+.text-selected {
+    color:#e6fffc
+}
+
+/* Background */
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-black {
+    background: #000;
+    color: #fff;
+}
+
+/* Mousetrail */
+
+.MouseTrail {
+    position: absolute;
+    height: 7px; width: 7px;
+    border-radius: 4px;
+    background: 
+  }
